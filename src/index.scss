@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+$primary-light: #c0c4c9;
+$primary-dark: #222324;
+$secondary-light: #6a6a6a;
+$secondary-dark: #333434;
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: $primary-light;
+}
+
+.container-xl {
+   max-width: 1200px;
+   margin: 0 auto;
+}
