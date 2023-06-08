@@ -1,0 +1,27 @@
+// Color Variables
+
+$primary-light: #c0c4c9;
+$primary-dark: #222324;
+$secondary-light: #6a6a6a;
+$secondary-dark: #333434;
+
+// Bootstrap Breakpoints v5.3
+
+$breakpoints: (
+   'xs': 'max-width: 579px',
+   'sm': '(min-width: 576px) and (max-width: 767.98px)',
+   'md': '(min-width: 768px) and (max-width: 991.98px)',
+   'lg': 'min-width: 992px',
+   // 'xl': '(min-width: 1200px) and (max-width: 1399.98px)',
+   // 'xxl': 'min-width: 1400px',,
+);
+
+// Media Query Mixins
+
+@mixin media($size) {
+   @media (map-get($breakpoints, $size)) {
+      @content;
+   }
+}
+
+// Other Mixin

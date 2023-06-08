@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.scss'
+import DownloadButton from '../UI/DownloadButton'
 
 const Hero = (props) => {
    return (
@@ -10,9 +11,9 @@ const Hero = (props) => {
             </div>
 
             <div className='hero-details'>
-               <button className='download-cv'>
+               <DownloadButton className='download-cv'>
                   <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
-               </button>
+               </DownloadButton>
                <img
                   src='../public/assets/logo.svg'
                   alt='logo'
@@ -20,7 +21,7 @@ const Hero = (props) => {
                />
                <div className='title'>
                   <h1>
-                     JEROME. <span className='lastname'>MANDAL</span>
+                     JEROME.<span className='lastname'>MANDAL</span>
                   </h1>
                   <h3>FRONT-END DEVELOPER | UI/UX DESIGNER</h3>
                </div>
@@ -31,6 +32,8 @@ const Hero = (props) => {
                </p>
                <div className='hero-link'>
                   <span>Checkout my portfolio</span>
+                  <i className='fa-brands fa-square-behance'></i>
+                  <i className='fa-brands fa-github'></i>
                </div>
             </div>
          </div>
