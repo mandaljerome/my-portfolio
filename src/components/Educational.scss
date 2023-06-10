@@ -1,0 +1,71 @@
+@import '../global-mixins/global.scss';
+
+.educational {
+   background-color: $primary-dark;
+   color: $primary-light;
+   clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
+   padding: 8rem 0 1rem 0;
+   margin-top: -7rem;
+
+   .container-xl {
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      .about-section {
+         flex: 1;
+         max-width: 100%;
+         min-width: 340px;
+
+         h3 {
+            font-size: 1.75rem;
+         }
+
+         p {
+            line-height: 1.7rem;
+            margin-top: 1rem;
+         }
+      }
+
+      .educational-attainment {
+         flex: 1;
+         max-width: 100%;
+         min-width: 340px;
+
+         h3 {
+            font-size: 1.75rem;
+         }
+
+         h5 {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+         }
+
+         p:nth-child(1n) {
+            margin-top: 0.5rem;
+         }
+
+         a {
+            display: block;
+            margin: 1.4rem 0;
+            color: $primary-light;
+         }
+
+         .buttons {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+
+            .button-style {
+               margin-right: 0.75rem;
+            }
+
+            i {
+               font-size: 1.68rem;
+               margin: 0 0.3rem;
+            }
+         }
+      }
+   }
+}
