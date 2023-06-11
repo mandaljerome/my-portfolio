@@ -32,10 +32,13 @@ const Hero = (props) => {
                </p>
                <div className='hero-link'>
                   <span>Checkout my portfolio</span>
-                  <a href=''>
+                  <a
+                     href='https://www.behance.net/mandaljerome'
+                     target='_blank'
+                  >
                      <i className='fa-brands fa-square-behance'></i>
                   </a>
-                  <a href=''>
+                  <a href='https://github.com/mandaljerome' target='_blank'>
                      <i className='fa-brands fa-github'></i>
                   </a>
                </div>

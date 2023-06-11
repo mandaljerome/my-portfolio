@@ -28,7 +28,9 @@ const Educational = () => {
                <p>To learn more about me click the buttons below.</p>
 
                <div className='buttons'>
-                  <DownloadButton>DOWNLOAD CV</DownloadButton>
+                  <DownloadButton className='download'>
+                     DOWNLOAD CV
+                  </DownloadButton>
                   <i className='fa-brands fa-square-facebook'></i>
                   <i className='fa-brands fa-instagram'></i>
                   <i className='fa-brands fa-linkedin-in'></i>

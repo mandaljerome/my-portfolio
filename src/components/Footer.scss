@@ -1,0 +1,26 @@
+@import '../global-mixins/global.scss';
+
+.footer {
+   padding: 0.8rem 0;
+   color: $primary-dark;
+   .container-xl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+         font-size: 0.9rem;
+         font-weight: 500;
+      }
+
+      .icons {
+         display: flex;
+         align-items: center;
+
+         i {
+            font-size: 1.4rem;
+            margin: 0 0.3rem;
+         }
+      }
+   }
+}

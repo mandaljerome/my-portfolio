@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Hero from './components/Hero'
 import Educational from './components/Educational'
 import Expertise from './components/Expertise'
+import Footer from './components/Footer'
 
 function App() {
    return (
@@ -11,6 +12,7 @@ function App() {
          <Hero />
          <Educational />
          <Expertise />
+         <Footer />
       </div>
    )
 }
