@@ -1,4 +1,16 @@
 @import '../global-mixins/global.scss';
 
 .projects {
+   padding: 2rem 0;
+   background-image: url('../assets/gradient-bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 50vh;
+
+   h3 {
+      font-size: 1.75rem;
+      text-align: center;
+      color: $primary-dark;
+   }
 }

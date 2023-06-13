@@ -63,7 +63,7 @@ const Hero = (props) => {
                   asset to any organization.
                </motion.p>
                <motion.div className='hero-link' variants={itemVariants}>
-                  <span>Checkout my portfolio</span>
+                  <span>Checkout my portfolio's</span>
                   <a
                      href='https://www.behance.net/mandaljerome'
                      target='_blank'
