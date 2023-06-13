@@ -1,5 +1,6 @@
 import React from 'react'
 import './DownloadButton.scss'
+import { motion } from 'framer-motion'
 
 const DownloadButton = (props) => {
    const downloadHandler = () => {
@@ -8,13 +9,14 @@ const DownloadButton = (props) => {
    }
 
    return (
-      <button
+      <motion.button
          className={`${props.className} button-style`}
          onClick={downloadHandler}
          href={props.href}
+         whileHover={{ scale: 1.05 }}
       >
          {props.children}
-      </button>
+      </motion.button>
    )
 }
 

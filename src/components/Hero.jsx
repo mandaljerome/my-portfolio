@@ -1,8 +1,32 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './Hero.scss'
 import DownloadButton from '../UI/DownloadButton'
 
 const Hero = (props) => {
+   const animationVariants = {
+      hidden: { opacity: 0 },
+      show: {
+         opacity: 1,
+         transition: {
+            duration: 0.6,
+            staggerChildren: 0.5,
+         },
+      },
+   }
+
+   const itemVariants = {
+      hidden: {
+         opacity: 0,
+      },
+      show: {
+         opacity: 1,
+         transition: {
+            duration: 0.5,
+         },
+      },
+   }
+
    return (
       <div className='hero'>
          <div className='container-xl'>
@@ -10,39 +34,53 @@ const Hero = (props) => {
                <img src='../public/assets/hero-image.png' alt='formal-image' />
             </div>
 
-            <div className='hero-details'>
+            <motion.div
+               className='hero-details'
+               variants={animationVariants}
+               initial='hidden'
+               animate='show'
+            >
                <DownloadButton className='download-cv'>
                   <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
                </DownloadButton>
-               <img
+               <motion.img
                   src='../public/assets/logo.svg'
                   alt='logo'
                   className='logo'
+                  variants={itemVariants}
                />
                <div className='title'>
-                  <h1>
+                  <motion.h1 variants={itemVariants}>
                      JEROME.<span className='lastname'>MANDAL</span>
-                  </h1>
-                  <h3>FRONT-END DEVELOPER | UI/UX DESIGNER</h3>
+                  </motion.h1>
+                  <motion.h3 variants={itemVariants}>
+                     FRONT-END DEVELOPER | UI/UX DESIGNER
+                  </motion.h3>
                </div>
-               <p>
+               <motion.p variants={itemVariants}>
                   High level experience in web and graphic design, possess a
                   unique set of skills and expertise that make an invaluable
                   asset to any organization.
-               </p>
-               <div className='hero-link'>
+               </motion.p>
+               <motion.div className='hero-link' variants={itemVariants}>
                   <span>Checkout my portfolio</span>
                   <a
                      href='https://www.behance.net/mandaljerome'
                      target='_blank'
                   >
-                     <i className='fa-brands fa-square-behance'></i>
+                     <motion.i
+                        className='fa-brands fa-square-behance'
+                        whileHover={{ scale: 1.2, y: -5 }}
+                     ></motion.i>
                   </a>
                   <a href='https://github.com/mandaljerome' target='_blank'>
-                     <i className='fa-brands fa-github'></i>
+                     <motion.i
+                        className='fa-brands fa-github'
+                        whileHover={{ scale: 1.2, y: -5 }}
+                     ></motion.i>
                   </a>
-               </div>
-            </div>
+               </motion.div>
+            </motion.div>
          </div>
       </div>
    )

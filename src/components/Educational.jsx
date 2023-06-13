@@ -1,5 +1,6 @@
 import React from 'react'
 import './Educational.scss'
+import { motion } from 'framer-motion'
 import DownloadButton from '../UI/DownloadButton'
 
 const Educational = () => {
@@ -31,9 +32,18 @@ const Educational = () => {
                   <DownloadButton className='download'>
                      DOWNLOAD CV
                   </DownloadButton>
-                  <i className='fa-brands fa-square-facebook'></i>
-                  <i className='fa-brands fa-instagram'></i>
-                  <i className='fa-brands fa-linkedin-in'></i>
+                  <motion.i
+                     className='fa-brands fa-square-facebook'
+                     whileHover={{ scale: 1.2, y: -5 }}
+                  ></motion.i>
+                  <motion.i
+                     className='fa-brands fa-instagram'
+                     whileHover={{ scale: 1.2, y: -5 }}
+                  ></motion.i>
+                  <motion.i
+                     className='fa-brands fa-linkedin-in'
+                     whileHover={{ scale: 1.2, y: -5 }}
+                  ></motion.i>
                </div>
             </div>
          </div>
