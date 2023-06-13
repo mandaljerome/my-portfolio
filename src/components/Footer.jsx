@@ -5,7 +5,7 @@ const Footer = () => {
    return (
       <div className='footer'>
          <div className='container-xl'>
-            <p>© Copyright 2023 - All rights and reserved J.Mandal.</p>
+            <p>Copyright © 2023 - All rights reserved by J.Mandal.</p>
             <div className='icons'>
                <i className='fa-brands fa-square-facebook'></i>
                <i className='fa-brands fa-instagram'></i>

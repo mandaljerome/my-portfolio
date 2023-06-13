@@ -52,6 +52,28 @@ const Expertise = () => {
                   </p>
                </div>
             </div>
+
+            <hr />
+
+            <div className='icons'>
+               <img src='../../public/assets/icons/HTML5.svg' alt='html' />
+               <img src='../../public/assets/icons/CSS3.svg' alt='css' />
+               <img src='../../public/assets/icons/SASS.svg' alt='sass' />
+               <img src='../../public/assets/icons/Bootstrap.svg' alt='bs' />
+               <img src='../../public/assets/icons/Javascript.svg' alt='js' />
+               <img src='../../public/assets/icons/Typescript.svg' alt='ts' />
+               <img src='../../public/assets/icons/React.svg' alt='react' />
+               <img src='../../public/assets/icons/SQL.svg' alt='sql' />
+               <img src='../../public/assets/icons/Wordpress.svg' alt='wp' />
+               <img src='../../public/assets/icons/Webflow.svg' alt='wf' />
+               <img src='../../public/assets/icons/Figma.svg' alt='figma' />
+               <img src='../../public/assets/icons/xD.svg' alt='xd' />
+               <img src='../../public/assets/icons/Photoshop.svg' alt='ps' />
+               <img src='../../public/assets/icons/Illustrator.svg' alt='ai' />
+               <img src='../../public/assets/icons/inDesign.svg' alt='id' />
+               <img src='../../public/assets/icons/SketchUp.svg' alt='sku' />
+               <img src='../../public/assets/icons/Keyshot.svg' alt='ks' />
+            </div>
          </div>
       </div>
    )

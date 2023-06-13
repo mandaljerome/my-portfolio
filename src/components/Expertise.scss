@@ -2,7 +2,7 @@
 
 .expertise {
    background-color: $primary-dark;
-   padding: 2rem 0;
+   padding: 4rem 0;
    margin-top: -1px;
    color: $primary-light;
 
@@ -31,11 +31,26 @@
          line-height: 1.7rem;
       }
    }
+
+   hr {
+      margin-top: 3rem;
+   }
+
+   .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      img {
+         height: 23px;
+         margin: 2rem 1rem 0 1rem;
+      }
+   }
 }
 
 @include media(xs) {
    .expertise {
-      padding: 1rem 0;
+      padding: 2rem 0;
 
       .expertise-cards {
          margin-top: 2rem;
@@ -52,7 +67,7 @@
 
 @include media(sm) {
    .expertise {
-      padding: 1rem 0;
+      padding: 2rem 0;
 
       .expertise-cards {
          margin-top: 2rem;

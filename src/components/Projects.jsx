@@ -4,7 +4,9 @@ import './Projects.scss'
 const Projects = () => {
    return (
       <div className='projects'>
-         <div className='container-xl'>Projects123</div>
+         <div className='container-xl'>
+            <h3>Projects</h3>
+         </div>
       </div>
    )
 }
