@@ -27,6 +27,14 @@ const Hero = (props) => {
       },
    }
 
+   const iconVariants = {
+      whileHover: {
+         color: '#F34B2C',
+         scale: 1.2,
+         y: -5,
+      },
+   }
+
    return (
       <div className='hero'>
          <div className='container-xl'>
@@ -70,13 +78,15 @@ const Hero = (props) => {
                   >
                      <motion.i
                         className='fa-brands fa-square-behance'
-                        whileHover={{ scale: 1.2, y: -5 }}
+                        variants={iconVariants}
+                        whileHover='whileHover'
                      ></motion.i>
                   </a>
                   <a href='https://github.com/mandaljerome' target='_blank'>
                      <motion.i
                         className='fa-brands fa-github'
-                        whileHover={{ scale: 1.2, y: -5 }}
+                        variants={iconVariants}
+                        whileHover='whileHover'
                      ></motion.i>
                   </a>
                </motion.div>

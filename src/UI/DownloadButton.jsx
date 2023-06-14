@@ -13,7 +13,12 @@ const DownloadButton = (props) => {
          className={`${props.className} button-style`}
          onClick={downloadHandler}
          href={props.href}
-         whileHover={{ scale: 1.05 }}
+         whileHover={{
+            scale: 1.05,
+            background:
+               'linear-gradient(152deg, rgba(243,75,44,1) 0%, rgba(213,206,71,1) 100%)',
+            color: '#222324',
+         }}
       >
          {props.children}
       </motion.button>

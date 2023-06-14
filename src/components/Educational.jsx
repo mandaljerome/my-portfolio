@@ -4,6 +4,14 @@ import { motion } from 'framer-motion'
 import DownloadButton from '../UI/DownloadButton'
 
 const Educational = () => {
+   const iconVariants = {
+      whileHover: {
+         color: '#F34B2C',
+         scale: 1.2,
+         y: -5,
+      },
+   }
+
    return (
       <div className='educational'>
          <div className='container-xl'>
@@ -29,20 +37,23 @@ const Educational = () => {
                <p>To learn more about me click the buttons below.</p>
 
                <div className='buttons'>
-                  <DownloadButton className='download'>
-                     DOWNLOAD CV
+                  <DownloadButton className='download-cv'>
+                     <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
                   </DownloadButton>
                   <motion.i
                      className='fa-brands fa-square-facebook'
-                     whileHover={{ scale: 1.2, y: -5 }}
+                     variants={iconVariants}
+                     whileHover='whileHover'
                   ></motion.i>
                   <motion.i
                      className='fa-brands fa-instagram'
-                     whileHover={{ scale: 1.2, y: -5 }}
+                     variants={iconVariants}
+                     whileHover='whileHover'
                   ></motion.i>
                   <motion.i
                      className='fa-brands fa-linkedin-in'
-                     whileHover={{ scale: 1.2, y: -5 }}
+                     variants={iconVariants}
+                     whileHover='whileHover'
                   ></motion.i>
                </div>
             </div>
