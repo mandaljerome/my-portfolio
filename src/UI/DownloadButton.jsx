@@ -13,6 +13,7 @@ const DownloadButton = (props) => {
          className={`${props.className} button-style`}
          onClick={downloadHandler}
          href={props.href}
+         variants={props.variants}
          whileHover={{
             scale: 1.05,
             background:

@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import './Hero.scss'
 import DownloadButton from '../UI/DownloadButton'
 
@@ -11,6 +11,7 @@ const Hero = (props) => {
          transition: {
             duration: 0.6,
             staggerChildren: 0.5,
+            delayChildren: 1,
          },
       },
    }
@@ -48,7 +49,12 @@ const Hero = (props) => {
                initial='hidden'
                animate='show'
             >
-               <DownloadButton className='download-cv'>
+               <DownloadButton
+                  className='download-cv'
+                  variants={itemVariants}
+                  initial='hidden'
+                  animate='show'
+               >
                   <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
                </DownloadButton>
                <motion.img
