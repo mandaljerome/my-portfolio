@@ -2,6 +2,8 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import './Hero.scss'
 import DownloadButton from '../UI/DownloadButton'
+import heroImage from '../assets/hero-image.png'
+import logo from '../assets/logo.svg'
 
 const Hero = (props) => {
    const animationVariants = {
@@ -40,7 +42,7 @@ const Hero = (props) => {
       <div className='hero'>
          <div className='container-xl'>
             <div className='hero-image'>
-               <img src='../public/assets/hero-image.png' alt='formal-image' />
+               <img src={heroImage} alt='formal-image' />
             </div>
 
             <motion.div
@@ -58,7 +60,7 @@ const Hero = (props) => {
                   <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
                </DownloadButton>
                <motion.img
-                  src='../public/assets/logo.svg'
+                  src={logo}
                   alt='logo'
                   className='logo'
                   variants={itemVariants}
