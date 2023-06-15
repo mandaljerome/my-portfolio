@@ -6,7 +6,6 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   height: 50vh;
 
    h3 {
       font-size: 1.75rem;
@@ -16,8 +15,8 @@
 
    h2 {
       text-align: center;
-      margin-top: 3rem;
-      font-size: 7rem;
+      font-size: clamp(2rem, 2rem + 4vw, 7rem);
       opacity: 0.5;
+      margin: 1em 0;
    }
 }

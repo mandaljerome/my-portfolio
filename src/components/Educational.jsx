@@ -40,21 +40,27 @@ const Educational = () => {
                   <DownloadButton className='download-cv'>
                      <i className='fa-solid fa-file-arrow-down'></i>DOWNLOAD CV
                   </DownloadButton>
-                  <motion.i
-                     className='fa-brands fa-square-facebook'
-                     variants={iconVariants}
-                     whileHover='whileHover'
-                  ></motion.i>
-                  <motion.i
-                     className='fa-brands fa-instagram'
-                     variants={iconVariants}
-                     whileHover='whileHover'
-                  ></motion.i>
-                  <motion.i
-                     className='fa-brands fa-linkedin-in'
-                     variants={iconVariants}
-                     whileHover='whileHover'
-                  ></motion.i>
+                  <a href='https://www.facebook.com/ijlmandal/' target='_'>
+                     <motion.i
+                        className='fa-brands fa-square-facebook'
+                        variants={iconVariants}
+                        whileHover='whileHover'
+                     ></motion.i>
+                  </a>
+                  <a href='https://www.instagram.com/ijlmandal/' target='_'>
+                     <motion.i
+                        className='fa-brands fa-instagram'
+                        variants={iconVariants}
+                        whileHover='whileHover'
+                     ></motion.i>
+                  </a>
+                  <a href='https://www.linkedin.com/in/ijlmandal/' target='_'>
+                     <motion.i
+                        className='fa-brands fa-linkedin-in'
+                        variants={iconVariants}
+                        whileHover='whileHover'
+                     ></motion.i>
+                  </a>
                </div>
             </div>
          </div>
