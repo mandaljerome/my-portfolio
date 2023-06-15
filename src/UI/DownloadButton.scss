@@ -11,6 +11,14 @@
    border-radius: 4px;
    cursor: pointer;
 
+   &:hover {
+      background: linear-gradient(
+         152deg,
+         rgba(243, 75, 44, 1) 0%,
+         rgba(213, 206, 71, 1) 100%
+      );
+   }
+
    i {
       margin-right: 5px;
    }

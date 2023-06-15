@@ -6,6 +6,7 @@ const Projects = () => {
       <div className='projects'>
          <div className='container-xl'>
             <h3>Awesome Projects</h3>
+            <h2>BUILDING API FOR PROJECTS</h2>
          </div>
       </div>
    )

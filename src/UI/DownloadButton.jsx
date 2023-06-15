@@ -16,8 +16,6 @@ const DownloadButton = (props) => {
          variants={props.variants}
          whileHover={{
             scale: 1.05,
-            background:
-               'linear-gradient(152deg, rgba(243,75,44,1) 0%, rgba(213,206,71,1) 100%)',
             color: '#222324',
          }}
       >

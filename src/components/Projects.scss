@@ -6,10 +6,18 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   height: 50vh;
 
    h3 {
       font-size: 1.75rem;
       text-align: center;
       color: $primary-dark;
+   }
+
+   h2 {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 7rem;
+      opacity: 0.5;
    }
 }
