@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const DownloadButton = (props) => {
    const downloadHandler = () => {
       window.location.href =
-         'https://drive.google.com/uc?id=1MLLe-8LxkWPh9zjIjQQgV8DXZGW5sknp&export=download'
+         'https://drive.google.com/uc?id=1Q_aeZZsH912M1LdlsdtxXjFdCNdjquWp&export=download'
    }
 
    return (
