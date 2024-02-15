@@ -6,8 +6,9 @@ const TopInformation = () => {
     <div className="top-info">
       <img src={img} alt="" />
       <p>
-        Sorry, this is my old portfolio website. I'm currently working on my new
-        website.
+        Apologies, you've stumbled upon my previous portfolio website. I'm
+        currently immersed in crafting an exciting new digital space that truly
+        reflects my journey and aspirations.
       </p>
     </div>
   );
