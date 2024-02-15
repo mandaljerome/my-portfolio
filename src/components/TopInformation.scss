@@ -1,0 +1,15 @@
+@import "../global-mixins/global.scss";
+
+.top-info {
+  background-color: $primary-dark;
+  padding: 0.7rem 0;
+  color: $primary-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 20px;
+    margin-right: 0.6rem;
+  }
+}
